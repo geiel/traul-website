@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* colors: {
+    'text': '#01141d',
+    'background': '#f8fcff',
+    'primary': '#008DDA',
+    'secondary': '#8193fc',
+    'accent': '#4946fb',
+   },
+
+   colors: {
+    'text': '#02090e',
+    'background': '#f5fbfe',
+    'primary': '#008fdb',
+    'secondary': '#928bf0',
+    'accent': '#825bea',
+   },
+    */
