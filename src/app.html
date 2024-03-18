@@ -4,9 +4,40 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta itemprop="name" content="Traul" />
+		<meta itemprop="url" content="https://www.traulapp.com/" />
+		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+			<meta itemprop="name" content="Traul"
+		/></span>
+		<meta itemprop="datePublished" content="2024-03-17T23:43" />
+		<meta itemprop="applicationCategory" content="Finanzas" />
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "SoftwareApplication",
+				"name": "Traul",
+				"image": "https://www.traulapp.com/_app/immutable/assets/traul-logo.4AX_E2pf.svg",
+				"url": "https://www.traulapp.com/",
+				"author": {
+					"@type": "Person",
+					"name": "Traul"
+				},
+				"datePublished": "2024-03-17T23:43",
+				"applicationCategory": "Finanzas",
+				"description": "Gestor de gastos automático. Visualiza y categoriza los gastos de todas tus tarjetas automáticamente, obteniendo información real de tu banco a través de tus comprobantes de correo electrónico.",
+				"screenshot": [
+					"https://www.traulapp.com/_app/immutable/assets/categories.DyGHgmnE.svg",
+					"https://www.traulapp.com/_app/immutable/assets/details.P0z-jHqT.svg",
+					"https://www.traulapp.com/_app/immutable/assets/mails.Jj-0hNC_.svg"
+				]
+			}
+		</script>
+
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
+		<div itemscope itemtype="http://schema.org/SoftwareApplication" style="display: contents">
+			%sveltekit.body%
+		</div>
 	</body>
 </html>

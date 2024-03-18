@@ -3,14 +3,13 @@
 
 	import logo from '$lib/assets/traul-logo.svg';
 	import { Toaster } from 'svelte-sonner';
+	import SeoHeaders from '../components/SeoHeaders.svelte';
 </script>
 
-<svelte:head>
-	<title>Traul - Maneja tus finanzas en un solo lugar</title>
-</svelte:head>
+<SeoHeaders />
 
 <Toaster position="top-right" richColors />
 <div class="fixed top-2 left-4">
-	<img alt="Traul Logo" src={logo} class="w-20" />
+	<img itemprop="image" alt="Traul Logo" src={logo} class="w-20" />
 </div>
 <slot />

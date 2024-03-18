@@ -67,13 +67,22 @@
 					<div class="card bg-primary w-full">
 						<div class="card-body">
 							<h2 class="card-title">Controla cómo se distribuyen tus gastos</h2>
-							<img alt="Gastos divididos en categorias automaticamente" src={categories} />
+							<img
+								itemprop="screenshot"
+								alt="Gastos divididos en categorias automaticamente"
+								src={categories}
+							/>
 						</div>
 					</div>
 					<div class="card bg-secondary w-full">
 						<div class="card-body">
 							<h2 class="card-title">Desglose detallado de tus gastos</h2>
-							<img alt="El detalle de un gasto en el Banco Popular" src={details} class="pt-10" />
+							<img
+								itemprop="screenshot"
+								alt="El detalle de un gasto en el Banco Popular"
+								src={details}
+								class="pt-10"
+							/>
 						</div>
 					</div>
 					<div class="card bg-accent w-full">
@@ -81,7 +90,12 @@
 							<h2 class="card-title">
 								No necesitas dar ninguna información bancaria, solamente tu email
 							</h2>
-							<img alt="Gmail y outlook para ver tus gastos" src={mails} class="pt-10" />
+							<img
+								itemprop="screenshot"
+								alt="Gmail y outlook para ver tus gastos"
+								src={mails}
+								class="pt-10"
+							/>
 						</div>
 					</div>
 				</div>
