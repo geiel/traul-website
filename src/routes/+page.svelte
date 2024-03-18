@@ -12,8 +12,8 @@
 			<h1 class="text-center text-4xl md:text-8xl font-extrabold md:font-bold">
 				Todos tus gastos en un solo lugar
 			</h1>
-			<p class="text-center opacity-70 md:text-lg md:max-w-2xl">
-				Visualiza y categoriza los gastos de todas tus tarjetas automaticamente y en un solo lugar.
+			<p class="text-center opacity-70 md:text-xl md:max-w-2xl">
+				Visualiza y categoriza los gastos de todas tus tarjetas automáticamente.
 			</p>
 			<div class="flex flex-col md:flex-row p-4 w-full gap-2 items-center md:max-w-2xl">
 				<label class="input input-bordered flex items-center gap-2 w-full">
@@ -30,7 +30,7 @@
 					>
 					<input type="text" class="grow" placeholder="traul@gmail.com" />
 				</label>
-				<button class="btn w-full md:btn-wide">Notificame</button>
+				<button class="btn w-full md:btn-wide">Notifícame</button>
 			</div>
 		</div>
 	</div>
@@ -41,20 +41,20 @@
 				<div class="flex flex-col md:flex-row w-full gap-3 md:gap-5">
 					<div class="card bg-primary w-full">
 						<div class="card-body">
-							<h2 class="card-title">Mira donde tu dinero se gasta</h2>
+							<h2 class="card-title">Mira dónde tu dinero se gasta</h2>
 							<img alt="Gastos divididos en categorias automaticamente" src={categories} />
 						</div>
 					</div>
 					<div class="card bg-secondary w-full">
 						<div class="card-body">
-							<h2 class="card-title">Cada gasto esta detallado</h2>
+							<h2 class="card-title">Cada gasto está detallado</h2>
 							<img alt="El detalle de un gasto en el Banco Popular" src={details} class="pt-10" />
 						</div>
 					</div>
 					<div class="card bg-accent w-full">
 						<div class="card-body">
 							<h2 class="card-title">
-								No necesitas dar ninguna informacion bancaria, solalemente tu email
+								No necesitas dar ninguna información bancaria, solamente tu email
 							</h2>
 							<img alt="Gmail y outlook para ver tus gastos" src={mails} class="pt-10" />
 						</div>
