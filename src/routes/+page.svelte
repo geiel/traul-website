@@ -8,12 +8,14 @@
 	class="h-screen w-full flex flex-col items-center bg-gradient-to-br from-blue-100 to-cyan-100 space-y-20"
 >
 	<div class="md:max-w-3xl flex mt-24 md:mt-48">
-		<div class="flex flex-col gap-7 items-center">
-			<h1 class="text-center text-5xl md:text-8xl font-bold">Todos tus gastos en un solo lugar</h1>
-			<p class="text-center text-lg md:max-w-2xl">
+		<div class="flex flex-col gap-7 items-center p-2 md:p-0">
+			<h1 class="text-center text-4xl md:text-8xl font-extrabold md:font-bold">
+				Todos tus gastos en un solo lugar
+			</h1>
+			<p class="text-center opacity-70 md:text-lg md:max-w-2xl">
 				Visualiza y categoriza los gastos de todas tus tarjetas automaticamente y en un solo lugar.
 			</p>
-			<div class="flex flex-col md:flex-row p-2 w-full gap-2 items-center md:max-w-2xl">
+			<div class="flex flex-col md:flex-row p-4 w-full gap-2 items-center md:max-w-2xl">
 				<label class="input input-bordered flex items-center gap-2 w-full">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
