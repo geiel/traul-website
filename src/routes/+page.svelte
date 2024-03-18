@@ -13,7 +13,7 @@
 			<p class="text-center text-lg md:max-w-2xl">
 				Visualiza y categoriza los gastos de todas tus tarjetas automaticamente y en un solo lugar.
 			</p>
-			<div class="flex flex-col md:flex-row p-2 w-full gap-2 items-center md:max-w-xl">
+			<div class="flex flex-col md:flex-row p-2 w-full gap-2 items-center md:max-w-2xl">
 				<label class="input input-bordered flex items-center gap-2 w-full">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@
 					>
 					<input type="text" class="grow" placeholder="traul@gmail.com" />
 				</label>
-				<button class="btn w-full">Notificame</button>
+				<button class="btn w-full md:btn-wide">Notificame</button>
 			</div>
 		</div>
 	</div>
