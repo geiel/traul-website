@@ -5,6 +5,8 @@
 	import mails from '$lib/assets/mails.svg';
 
 	import { toast } from 'svelte-sonner';
+
+	let submiting = false;
 </script>
 
 <div
@@ -22,13 +24,15 @@
 				method="POST"
 				class="flex flex-col md:flex-row p-4 w-full gap-2 items-center md:max-w-2xl"
 				use:enhance={() => {
+					submiting = true;
 					return async ({ result, update }) => {
-						if (result.type === 'failure' && result.data && result.data) {
+						if (result.type === 'failure' && result.data) {
 							toast.error(result.data.message + '');
 						} else {
 							toast.success('Gracias por unirte a la lista de espera');
 							await update();
 						}
+						submiting = false;
 					};
 				}}
 			>
@@ -46,7 +50,12 @@
 					>
 					<input type="text" name="email" class="grow" placeholder="traul@gmail.com" />
 				</label>
-				<button class="btn btn-primary w-full md:btn-wide" type="submit">Notifícame</button>
+				<button class="btn btn-primary w-full md:btn-wide" type="submit" disabled={submiting}>
+					{#if submiting}
+						<span class="loading loading-spinner"></span>
+					{/if}
+					Notifícame
+				</button>
 			</form>
 		</div>
 	</div>
@@ -138,14 +147,16 @@
 		method="POST"
 		class="flex flex-col md:flex-row p-4 w-full gap-2 items-center md:max-w-2xl"
 		use:enhance={() => {
+			submiting = true;
 			return async ({ result, update }) => {
-				if (result.type === 'failure' && result.data && result.data) {
+				if (result.type === 'failure' && result.data) {
 					toast.error(result.data.message + '');
 				} else {
 					toast.success('Gracias por unirte a la lista de espera');
 					await update();
 				}
 			};
+			submiting = false;
 		}}
 	>
 		<label class="input input-bordered flex items-center gap-2 w-full">
@@ -162,7 +173,12 @@
 			>
 			<input type="text" name="email" class="grow" placeholder="traul@gmail.com" />
 		</label>
-		<button class="btn btn-primary w-full md:btn-wide">Ponme en la lista</button>
+		<button class="btn btn-primary w-full md:btn-wide" disabled={submiting}>
+			{#if submiting}
+				<span class="loading loading-spinner"></span>
+			{/if}
+			Ponme en la lista
+		</button>
 	</form>
 </div>
 

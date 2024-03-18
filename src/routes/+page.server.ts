@@ -21,6 +21,15 @@ export const actions = {
 			});
 		}
 
+		const userExist =
+			await sql`select email from prelauch_users where prelauch_users.email = ${email}`;
+
+		if (userExist.length > 0) {
+			return fail(400, {
+				message: 'El email que ingresaste ya está registrado.'
+			});
+		}
+
 		await sql`insert into prelauch_users (email) values (${email.toString()})`;
 	}
 } satisfies Actions;
