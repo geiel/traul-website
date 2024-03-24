@@ -35,7 +35,9 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"drizzle-orm": "^0.30.4",
 		"postgres": "^3.4.3",
-		"svelte-sonner": "^0.3.19"
+		"svelte-sonner": "^0.3.19",
+		"zod": "^3.22.4"
 	}
 }
