@@ -22,7 +22,16 @@ const uncategorizedTotal = z
 	})
 	.array();
 
-export const load: PageServerLoad = async ({ cookies, fetch }) => {
+export const load: PageServerLoad = async ({ cookies, fetch, url }) => {
+	const userParam = url.searchParams.get('user');
+	if (userParam) {
+		cookies.set('user', userParam, {
+			secure: true,
+			httpOnly: true,
+			path: '/'
+		});
+	}
+
 	const user = cookies.get('user');
 
 	if (!user) {
