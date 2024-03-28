@@ -53,15 +53,6 @@ export const load: PageServerLoad = async ({ cookies, fetch, url }) => {
 		});
 	}
 
-	const getGlobalCategoriesTotal = async (userId: string) => {
-		const body = await fetch(
-			`https://mailexpense-vkmj5hob2q-uk.a.run.app/global/sub-categories/2024-03?userId=${userId}`
-		);
-		const json = await body.json();
-		const subCategories = subCategoriesSchema.array().nullable().parse(json);
-		return subCategories;
-	};
-
 	const getUserCategoriesTotal = async (userId: string) => {
 		const body = await fetch(
 			`https://mailexpense-vkmj5hob2q-uk.a.run.app/sub-categories/2024-03?userId=${userId}`
@@ -82,7 +73,6 @@ export const load: PageServerLoad = async ({ cookies, fetch, url }) => {
 	};
 
 	return {
-		globalTransactions: await getGlobalCategoriesTotal(parsedUser.data.userId),
 		transactions: await getUserCategoriesTotal(parsedUser.data.userId),
 		uncategorizeTransactions: await getUncategorizedTransactions(parsedUser.data.userId)
 	};
