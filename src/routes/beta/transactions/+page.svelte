@@ -7,7 +7,6 @@
 	let totalAmount: number;
 	let noTransactions = false;
 
-
 	$: globalCategorizedExpenseByCurrency = data.globalTransactions?.filter((expense) => {
 		if (expense.currency === currency) {
 			totalAmount += expense.totalAmount;
@@ -42,7 +41,7 @@
 <div class="flex flex-col container mx-auto">
 	<div class="flex justify-center p-5">
 		<div class="flex justify-center w-64 p-4 gap-10 bg-[#D9D9D9] rounded-full">
-			<h2 class="text-xl font-bold">Marzo 2024</h2>
+			<h2 class="text-xl font-bold">Transsaciones de hace un mes</h2>
 		</div>
 	</div>
 	<div class="flex justify-center">
