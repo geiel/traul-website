@@ -9,7 +9,7 @@
 <SeoHeaders />
 
 <Toaster position="top-right" richColors />
-<div class="fixed top-2 left-4">
+<a class="fixed top-2 left-4" href="/">
 	<img itemprop="image" alt="Traul Logo" src={logo} class="w-20" />
-</div>
+</a>
 <slot />

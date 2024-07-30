@@ -4,17 +4,17 @@ export default {
 	theme: {
 		extend: {}
 	},
-	plugins: [require('daisyui')],
+	plugins: [require('@tailwindcss/typography'), require('daisyui')],
 	daisyui: {
 		themes: [
 			'light',
 			{
 				traultheme: {
-					primary: '#008DDA',
-					secondary: '#928bf0',
-					accent: '#825bea',
+					primary: '#78c98b',
+					secondary: '#89d9ed',
+					accent: '#58d8e9',
 					neutral: '#3d4451',
-					'base-100': '#f5fbfe'
+					'base-100': '#fafefb'
 				}
 			}
 		]

@@ -10,7 +10,7 @@
 </script>
 
 <div
-	class="w-full flex flex-col pb-4 items-center bg-gradient-to-br from-blue-100 to-cyan-100 space-y-20"
+	class="w-full flex flex-col pb-4 items-center bg-gradient-to-br from-base-100 to-base-200 space-y-20"
 >
 	<div class="md:max-w-3xl flex mt-24 md:mt-48">
 		<div class="flex flex-col gap-7 items-center p-2 md:p-0">
@@ -48,7 +48,7 @@
 							d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z"
 						/></svg
 					>
-					<input type="email" name="email" class="grow" placeholder="traul@gmail.com" />
+					<input type="email" name="email" class="grow" placeholder="traulapp@gmail.com" />
 				</label>
 				<button class="btn btn-primary w-full md:btn-wide" type="submit" disabled={submiting}>
 					{#if submiting}
@@ -64,7 +64,7 @@
 		<div class="card shadow-xl w-full bg-base-100">
 			<div class="card-body">
 				<div class="flex flex-col md:flex-row w-full gap-3 md:gap-5">
-					<div class="card bg-primary w-full">
+					<div class="card bg-secondary w-full">
 						<div class="card-body">
 							<h2 class="card-title">Controla cómo se distribuyen tus gastos</h2>
 							<img
@@ -74,7 +74,7 @@
 							/>
 						</div>
 					</div>
-					<div class="card bg-secondary w-full">
+					<div class="card bg-primary w-full">
 						<div class="card-body">
 							<h2 class="card-title">Desglose detallado de tus gastos</h2>
 							<img
@@ -85,7 +85,7 @@
 							/>
 						</div>
 					</div>
-					<div class="card bg-accent w-full">
+					<div class="card bg-secondary w-full">
 						<div class="card-body">
 							<h2 class="card-title">
 								No necesitas dar ninguna información bancaria, solamente tu email
@@ -185,7 +185,7 @@
 					d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z"
 				/></svg
 			>
-			<input type="email" name="email" class="grow" placeholder="traul@gmail.com" />
+			<input type="email" name="email" class="grow" placeholder="traulapp@gmail.com" />
 		</label>
 		<button class="btn btn-primary w-full md:btn-wide" disabled={submiting}>
 			{#if submiting}
@@ -196,8 +196,14 @@
 	</form>
 </div>
 
-<footer class="footer footer-center p-4 text-base-content">
+<footer class="footer footer-center text-base-content rounded p-10">
+	<nav class="grid grid-flow-col gap-4">
+	  <a class="link link-hover" href="privacy-policy">Política de privacidad</a>
+	  <a class="link link-hover">Terminos y servicio</a>
+	</nav>
 	<aside>
-		<p>Copyright © 2024 - All right reserved by Traul</p>
+	  <p>Copyright © {new Date().getFullYear()} - Todos los derechos reservados por Traul Inc</p>
 	</aside>
-</footer>
+  </footer>
+
+
