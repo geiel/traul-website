@@ -11,9 +11,20 @@ export async function GET() {
 			xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
 		>
             <url>
-                <loc>https://www.traulapp.com/</loc>
-                <lastmod>2024-03-18T05:04:55+00:00</lastmod>
-            </url>
+  				<loc>https://www.traulapp.com/</loc>
+  				<lastmod>2024-08-01T19:53:01+00:00</lastmod>
+  				<priority>1.00</priority>
+			</url>
+			<url>
+  				<loc>https://www.traulapp.com/privacy-policy/es</loc>
+  				<lastmod>2024-08-01T19:53:01+00:00</lastmod>
+  				<priority>0.80</priority>
+			</url>
+			<url>
+  				<loc>https://www.traulapp.com/terms-and-conditions/es</loc>
+  				<lastmod>2024-08-01T19:53:01+00:00</lastmod>
+  				<priority>0.80</priority>
+			</url>
             
 		</urlset>`.trim(),
 		{ headers: { 'Content-Type': 'application/xml' } }
