@@ -117,9 +117,10 @@
 			<div class="collapse-content">
 				<p>
 					Traul analiza los comprobantes bancarios que recibes en tu correo electrónico para
-					identificar y categorizar tus gastos de manera precisa. Este proceso se enfoca
-					exclusivamente en la información contenida en dichos comprobantes; no se accede ni se lee
-					ningún otro tipo de correo, asegurando así tu privacidad y la seguridad de tus datos.
+					identificar tus gastos de manera precisa. Este proceso se enfoca exclusivamente en la
+					información contenida en dichos comprobantes; no se accede ni se lee ningún otro tipo de
+					correo, asegurando así tu privacidad y la seguridad de tus datos. Además, la información
+					no es leída por ningún humano y todo el proceso se realiza automáticamente.
 				</p>
 			</div>
 		</div>
@@ -198,12 +199,10 @@
 
 <footer class="footer footer-center text-base-content rounded p-10">
 	<nav class="grid grid-flow-col gap-4">
-	  <a class="link link-hover" href="privacy-policy">Política de privacidad</a>
-	  <a class="link link-hover">Terminos y servicio</a>
+		<a class="link link-hover" href="privacy-policy/es">Política de privacidad</a>
+		<a class="link link-hover" href="terms-and-conditions/es">Terminos y servicio</a>
 	</nav>
 	<aside>
-	  <p>Copyright © {new Date().getFullYear()} - Todos los derechos reservados por Traul Inc</p>
+		<p>Copyright © {new Date().getFullYear()} - Todos los derechos reservados por Traul Inc</p>
 	</aside>
-  </footer>
-
-
+</footer>
