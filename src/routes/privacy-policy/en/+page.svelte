@@ -231,6 +231,15 @@
 			<strong>To identify usage trends.</strong> We may process information about how you use our Services
 			to better understand how they are being used so we can improve them.
 		</li>
+		<li>
+			<strong
+				>In certain situations where the local processing of sensitive information fails, we may
+				request sensitive information from the user.</strong
+			>
+			With the user's explicit consent, this information may be shared with Traul for troubleshooting
+			and resolution purposes. This information will not be sent to any third party and will only be
+			used for the specified troubleshooting purposes.
+		</li>
 	</ul>
 
 	<h3>3. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</h3>

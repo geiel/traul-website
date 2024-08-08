@@ -245,6 +245,13 @@
 			<strong>Para identificar tendencias de uso.</strong> Podemos procesar información sobre cómo utiliza
 			nuestros Servicios para comprender mejor cómo se están utilizando y mejorarlos.
 		</li>
+		<li>
+			<strong
+				>En ciertas situaciones donde falle el procesamiento local de información sensible, podemos
+				solicitar información sensible al usuario.</strong
+			> En ciertas situaciones donde falle el procesamiento local de información sensible, podemos solicitar
+			información sensible al usuario.
+		</li>
 	</ul>
 
 	<h3>3. ¿CUÁNDO Y CON QUIÉN COMPARTIMOS SU INFORMACIÓN PERSONAL?</h3>
